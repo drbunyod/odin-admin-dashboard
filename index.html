@@ -4,9 +4,207 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="header">
+            <div class="search">
+                <span class="mdi mdi-magnify"></span>
+                <input type="text" name="search" id="search-bar">
+            </div>
+
+            <div class="user-info">
+                <span class="mdi mdi-bell-ring-outline"></span>
+                <img src="assets/img/dragon.png" alt="User photo" class="user-photo">
+                <p>Morgan Oakley</p>
+            </div>
+
+            <div class="user-greeting">
+                <div>
+                    <img src="assets/img/dragon.png" alt="User photo" class="user-photo">
+                </div>
+                <div>
+                    <small>Hi there,</small>
+                    <p>Morgan Oakley (@morgan)</p>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button type="button">New</button>
+                <button type="button">Upload</button>
+                <button type="button">Share</button>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="logo">
+                <h1><span class="mdi mdi-view-dashboard"></span> Dashboard</h1>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><span class="mdi mdi-home"></span>&ensp;Home</li>
+                    <li><span class="mdi mdi-card-account-details-outline"></span>&ensp;Profile</li>
+                    <li><span class="mdi mdi-message-reply"></span>&ensp;Messages</li>
+                    <li><span class="mdi mdi-clock-time-three"></span>&ensp;History</li>
+                    <li><span class="mdi mdi-note-multiple"></span>&ensp;Tasks</li>
+                    <li><span class="mdi mdi-account-group"></span>&ensp;Communities</li>
+                </ul>
+            </nav>
+
+            <nav>
+                <ul>
+                    <li><span class="mdi mdi-cog"></span>&ensp;Settings</li>
+                    <li><span class="mdi mdi-help-box"></span>&ensp;Support</li>
+                    <li><span class="mdi mdi-shield-check"></span>&ensp;Privacy</li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="main">
+            <div class="your-projects">
+                <h1 class="heading">Your Projects</h1>
+
+                <div>
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h2>Super Cool Project</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, debitis, magnam perferendis consequatur numquam fugiat.</p>
+                        </div>
+
+                        <div class="card-actions">
+                            <span class="mdi mdi-star-plus-outline"></span>
+                            <span class="mdi mdi-eye-plus-outline"></span>
+                            <span class="mdi mdi-source-fork"></span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h2>Less Cool Project</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quam tenetur numquam hic, et a illum vel.</p>
+                        </div>
+
+                        <div class="card-actions">
+                            <span class="mdi mdi-star-plus-outline"></span>
+                            <span class="mdi mdi-eye-plus-outline"></span>
+                            <span class="mdi mdi-source-fork"></span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h2>Impossible App</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis dolorem sequi saepe.</p>
+                        </div>
+
+                        <div class="card-actions">
+                            <span class="mdi mdi-star-plus-outline"></span>
+                            <span class="mdi mdi-eye-plus-outline"></span>
+                            <span class="mdi mdi-source-fork"></span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h2>Easy Peasy App</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem minus mollitia id sapiente voluptates.</p>
+                        </div>
+
+                        <div class="card-actions">
+                            <span class="mdi mdi-star-plus-outline"></span>
+                            <span class="mdi mdi-eye-plus-outline"></span>
+                            <span class="mdi mdi-source-fork"></span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h2>Ad Blocker</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+
+                        <div class="card-actions">
+                            <span class="mdi mdi-star-plus-outline"></span>
+                            <span class="mdi mdi-eye-plus-outline"></span>
+                            <span class="mdi mdi-source-fork"></span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h2>Money Maker</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, cupiditate.</p>
+                        </div>
+
+                        <div class="card-actions">
+                            <span class="mdi mdi-star-plus-outline"></span>
+                            <span class="mdi mdi-eye-plus-outline"></span>
+                            <span class="mdi mdi-source-fork"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="announcements">
+                <h1 class="heading">Announcements</h1>
+
+                <div>
+                    <div class="announcement-card">
+                        <h3>Site Maintenance</h3>
+                        <p>Phasellus vestibulum eros velit, non tempus mi mattis eu...</p>
+                    </div>
+                    <div class="announcement-card">
+                        <h3>Community Share Day</h3>
+                        <p>Ut bibendum nisl ullamcorper libero tristique, sed imperdiet nulla tincidunt...</p>
+                    </div>
+                    <div class="announcement-card">
+                        <h3>Updated Privacy Policy</h3>
+                        <p>Vivamus posuere massa quam, ut blandit tellus ultricies sit...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trending">
+                <h1 class="heading">Trending</h1>
+
+                <div>
+                    <div class="trending-card">
+                        <div>
+                            <img src="assets/img/deer.png" alt="User photo" class="user-photo">
+                        </div>
+                        <div>
+                            <p class="username">@tegan</p>
+                            <p>World Peace Builder</p>
+                        </div>
+                    </div>
+                    <div class="trending-card">
+                        <div>
+                            <img src="assets/img/dragon.png" alt="User photo" class="user-photo">
+                        </div>
+                        <div>
+                            <p class="username">@morgan</p>
+                            <p>Super Cool Project</p>
+                        </div>
+                    </div>
+                    <div class="trending-card">
+                        <div>
+                            <img src="assets/img/lion.png" alt="User photo" class="user-photo">
+                        </div>
+                        <div>
+                            <p class="username">@kendall</p>
+                            <p>Life Changing App</p>
+                        </div>
+                    </div>
+                    <div class="trending-card">
+                        <div>
+                            <img src="assets/img/hippopotamus.png" alt="User photo" class="user-photo">
+                        </div>
+                        <div>
+                            <p class="username">@alex</p>
+                            <p>No Traffic Maker</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
